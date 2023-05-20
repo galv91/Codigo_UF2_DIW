@@ -1,0 +1,12 @@
+<--- ACTIVIDAD COMPLEMENTARIA UF2 --->
+
+
+He intentado crear todos los elementos que habia que hacer en la actividad complementaria.
+
+En mi caso he añadido 3 nuevas secciones (acordeon + parallax + pestaña con filtros) justo despues de la primera seccion HERO, 
+tambien la parte del Tooltip que esta incluido en los titulos de las pestañas con filtro. 
+
+- El codigo HTML y CSS está en los mismos archivos que uso para todo lo demás, 
+aunque esta comentado para poder ubicarlo facilmente buscando " ACTIVIDAD COMPLEMENTARIA UF2 ".
+
+- El codigo JavaScript esta en un fichero aparte que se llama "complementaria.js".

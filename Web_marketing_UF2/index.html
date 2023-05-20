@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Future</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- open sans  -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- scripts JS -->
+    <script src="JS/scripts.js"></script>
+    <!-- precarga de imagenes -->
+    <link rel="preload" as="image" href="media/hero/img_hero_1.jpg">
+    <link rel="preload" as="image" href="media/hero/img_hero_2.jpg">
+    <link rel="preload" as="image" href="media/hero/img_hero_3.jpg">
+    <!-- AOS animation library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+
+    <!-- Modal de bienvenida -->
+    <div id="modalBienvenida">
+        <div id="modalBoxB">
+            <h1>Bienvenido a DIGITAL FUTURE</h1>
+            <button onclick="cerrarModalBienvenida()">Comenzar</button>
+        </div>
+    </div>
+
+    <!-- Hero image carrusel -->
+    <header id="hero">
+
+        <!-- Fondos hero -->
+        <div class="fondosHero" id="fondoHero1"></div>
+        <div class="fondosHero" id="fondoHero2"></div>
+        <div class="fondosHero" id="fondoHero3"></div>
+
+        <!-- Menu horizontal Navbar -->
+        <nav id="navbar">
+            <a href="index.html">
+                <!-- <div id="logo"></div> -->
+                <img src="media/logo-df.png" alt="" id="logo">
+            </a>
+            <ul id="navLinks">
+                <li class="navItem"><a href="#hero">Home</a></li>
+                <li class="navItem"><a href="#servicios">Servicios</a>
+                    <ul id="submenu">
+                        <li class="subItem"><a href="#servicios"
+                                onclick="marcarTab('socialMediaContainer', 'tabSm')">Social Media</a></li>
+                        <li class="subItem"><a href="#servicios"
+                                onclick="marcarTab('contentCreationContainer', 'tabCc')">Content Creation</a></li>
+                        <li class="subItem"><a href="#servicios"
+                                onclick="marcarTab('graphicDesignContainer', 'tabGd')">Graphic Design</a></li>
+                        <li class="subItem"><a href="#servicios"
+                                onclick="marcarTab('brandingContainer', 'tabB')">Branding</a></li>
+                    </ul>
+                </li>
+                <li class="navItem"><a href="#about">About</a></li>
+                <li class="navItem"><a href="#galeria">Galeria</a></li>
+                <li class="navItem"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Menu horizontal Navbar -->
+
+        <!-- Contenido texto hero  -->
+        <div class="heroContent">
+            <div id="heroTitle">
+                <h1>digital future</h1>
+                <p>Are you ready to take your business to the next level ?</p>
+            </div>
+        </div>
+
+    </header>
+    <!-- Hero image carrusel -->
+
+    <!-- ACTIVIDAD COMPLEMENTARIA UF2 - seccion acordeon + parallax + pestañas(filtros) -->
+    <!-- Seccion con acordeon -->
+    <section class="acordeonSection">
+        <div class="container">
+            <div class="slogan" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">
+                <h2>We are just getting started</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="750">
+                    <img src="media/acordeon_img.jpg" alt="Imagen moderna de color morado">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="750">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-title">Digital future</div>
+                            <div class="accordion-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nesciunt deleniti adipisci voluptatem tenetur dolores mollitia quisquam facere, porro
+                                rem cum distinctio eligendi quo praesentium molestias, sequi veniam maxime ex quis.
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum doloribus veritatis
+                                ullam voluptate ab fugiat, fuga consequuntur minus explicabo quod natus animi
+                                voluptatum?</div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-title">why us?</div>
+                            <div class="accordion-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Adipisci quaerat iusto nemo aliquid temporibus beatae totam animi. Alias, omnis, aliquam
+                                incidunt velit vel harum, qui ratione exercitationem ipsa eveniet minima?. Lorem ipsum
+                                dolor sit amet consectetur adipisicing elit. Dolore provident quasi rerum, officia
+                                exercitationem quis itaque tempore necessitatibus fugiat eum soluta ex.</div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-title">Values that lead us</div>
+                            <div class="accordion-content">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Hic, adipisci! Modi, ullam. Fugiat facere, harum, ducimus quae repellendus, mollitia at
+                                commodi deleniti doloribus aliquam ut! Obcaecati perspiciatis reiciendis recusandae
+                                error!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquam vitae
+                                minima veniam temporibus commodi quod voluptatem totam quisquam fugiat. Ex consectetur.
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-title">Know how</div>
+                            <div class="accordion-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Doloribus quia iste incidunt perferendis eligendi culpa fugiat aspernatur itaque, vitae
+                                aliquid fuga, aliquam laboriosam quam recusandae odit illum ab dignissimos molestiae.
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id natus alias eius quasi
+                                sapiente dolores aliquid adipisci totam possimus velit earum praesentium.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion parallax  -->
+    <section class="parallax-section">
+        <div id="parallax-background"></div>
+    </section>
+
+    <!-- seccion pestañas con filtro  -->
+    <section id="filterTab">
+        <div class="tab-section">
+            <div class="tabs" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="750">
+                <div class="tab active tooltip" data-tab="tab1">All</div>
+                <div class="tab tooltip" data-tab="tab2">Services</div>
+                <div class="tab tooltip" data-tab="tab3">Socials</div>
+                <div class="tab tooltip" data-tab="tab4">Values</div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-panel active" id="tab1">
+                    <div class="image-grid">
+                        <img src="media/filter-tab/imagen1.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen2.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen3.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen4.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen5.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen6.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen7.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen8.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen9.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen10.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen11.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                        <img src="media/filter-tab/imagen12.jpg" data-aos="fade-up" data-aos-easing="linear"
+                            data-aos-duration="750">
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab2">
+                    <div class="image-grid">
+                        <img src="media/filter-tab/imagen1.jpg">
+                        <img src="media/filter-tab/imagen2.jpg">
+                        <img src="media/filter-tab/imagen3.jpg">
+                        <img src="media/filter-tab/imagen4.jpg">
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab3">
+                    <div class="image-grid">
+                        <img src="media/filter-tab/imagen5.jpg">
+                        <img src="media/filter-tab/imagen6.jpg">
+                        <img src="media/filter-tab/imagen7.jpg">
+                        <img src="media/filter-tab/imagen8.jpg">
+                    </div>
+                </div>
+                <div class="tab-panel" id="tab4">
+                    <div class="image-grid">
+                        <img src="media/filter-tab/imagen9.jpg">
+                        <img src="media/filter-tab/imagen10.jpg">
+                        <img src="media/filter-tab/imagen11.jpg">
+                        <img src="media/filter-tab/imagen12.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- seccion servicios -->
+    <section id="servicios">
+        <div class="sectionTitle">
+            <h2 class="title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">Servicios</h2>
+        </div>
+
+        <div id="tabsContainer" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="750">
+            <p id="tabSm" class="tabItem activeTab" onclick="marcarTab('socialMediaContainer', 'tabSm')">Social Media
+            </p>
+            <p id="tabCc" class="tabItem" onclick="marcarTab('contentCreationContainer', 'tabCc')">Content Creation</p>
+            <p id="tabGd" class="tabItem" onclick="marcarTab('graphicDesignContainer', 'tabGd')">Graphic Design</p>
+            <p id="tabB" class="tabItem" onclick="marcarTab('brandingContainer', 'tabB')">Branding</p>
+        </div>
+
+        <div class="tabContainer" id="socialMediaContainer" data-aos="fade-right" data-aos-easing="ease-in-sine">
+            <div class="imgServicio">
+                <img src="media/services/servicio1_img.jpg" alt="">
+            </div>
+
+            <div class="textoServicio">
+                <p>Morbi ipsum orci, cursus eu sem sit amet, blandit luctus eros.
+                    Donec nisl nibh, ultricies quis vulputate ullamcorper, consectetur quis justo.
+                    Phasellus pulvinar accumsan tellus id varius.
+                    Donec dapibus orci eget libero pulvinar,
+                    nec finibus diam pellentesque suspensus.
+                </p>
+            </div>
+        </div>
+
+        <div class="tabContainer" id="contentCreationContainer" data-aos="fade-right" data-aos-offset="-800"
+            data-aos-easing="ease-in-sine">
+            <div class="imgServicio">
+                <img src="media/services/servicio2_img.jpg" alt="">
+            </div>
+
+            <div class="textoServicio">
+                <p>Morbi ipsum orci, cursus eu sem sit amet, blandit luctus eros.
+                    Donec nisl nibh, ultricies quis vulputate ullamcorper, consectetur quis justo.
+                    Phasellus pulvinar accumsan tellus id varius.
+                    Donec dapibus orci eget libero pulvinar,
+                    nec.
+                </p>
+            </div>
+        </div>
+
+        <div class="tabContainer" id="graphicDesignContainer" data-aos="fade-left" data-aos-offset="-1600"
+            data-aos-easing="ease-in-sine">
+            <div class="imgServicio">
+                <img src="media/services/servicio3_img.jpg" alt="">
+            </div>
+
+            <div class="textoServicio">
+                <p>Morbi ipsum orci, cursus eu sem sit amet, blandit luctus eros.
+                    Donec nisl nibh, ultricies quis vulputate ullamcorper, consectetur quis justo.
+                    Phasellus pulvinar accumsan tellus id varius.
+                    Donec dapibus orci eget libero pulvinar,
+                    nec finibus diam pellentesque.
+                </p>
+            </div>
+        </div>
+
+        <div class="tabContainer" id="brandingContainer" data-aos="fade-left" data-aos-offset="-2400"
+            data-aos-easing="ease-in-sine">
+            <div class="imgServicio">
+                <img src="media/services/servicio4_img.jpg" alt="">
+            </div>
+
+            <div class="textoServicio">
+                <p>Morbi ipsum orci, cursus eu sem sit amet, blandit luctus eros.
+                    Donec nisl nibh, ultricies quis vulputate ullamcorper, consectetur quis justo.
+                    Phasellus pulvinar accumsan tellus id varius.
+                    Donec dapibus orci eget libero pulvinar.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-- seccion servicios  -->
+
+    <!-- Seccion About -->
+    <section id="about">
+        <div class="sectionTitle">
+            <h2 class="title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">About</h2>
+        </div>
+
+        <div id="aboutContainer" data-aos="fade-right" data-aos-duration="1000">
+            <div class="rowTexto">
+                <p>Mauris id bibendum erat. Nam lobortis,
+                    mauris vitae faucibus ultrices, arcu risus aliquet augue, non lobortis ex erat at justo.
+                    Mauris non ante vel massa pretium eleifend. Vivamus pellentesque ipsum neque, eget semper urna
+                    condimentum eu.<br><br>
+                    Phasellus porta dui varius dictum faucibus. Donec commodo turpis vel fermentum elementum.
+                    Praesent ut eleifend justo. Pellentesque in nisi ut leo posuere lobortis vel sit amet enim.
+                    Ut congue tortor vel diam vestibulum sagittis. Mauris sit amet venenatis mauris.
+                    Integer sagittis, quam et laoreet faucibus, nisl urna sollicitudin elit, eget suscipit odio magna id
+                    velit.
+                    Duis dapibus urna a tortor dapibus, at mollis tortor mattis.
+                </p>
+            </div>
+
+            <div class="rowMedia">
+                <div id="aboutVid">
+                    <video src="media/about/about_vid.mp4" id="aboutVideo" controls muted autoplay loop></video>
+                </div>
+                <div id="aboutImg">
+                    <img src="media/about/about_img.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- seccion About -->
+
+    <!-- seccion galeria -->
+    <section id="galeria">
+        <div class="sectionTitle">
+            <h2 class="titleOscuro" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">Galeria</h2>
+        </div>
+
+        <div id="galeriaContainer">
+            <div class="imgGaleria">
+                <img class="imgGal" src="media/gallery/img10.jpg" data-aos="fade-up" alt="">
+            </div>
+            <div class="imgGaleria">
+                <img class="imgGal" src="media/gallery/img8.jpg" data-aos="fade-up" alt="">
+            </div>
+            <div class="imgGaleria">
+                <img class="imgGal" src="media/gallery/img4.jpg" data-aos="fade-up" alt="">
+            </div>
+            <div class="imgGaleria">
+                <img class="imgGal" src="media/gallery/img6.jpg" data-aos="fade-up" alt="">
+            </div>
+            <div class="imgGaleria">
+                <img class="imgGal" src="media/gallery/img9.png" data-aos="fade-up" alt="">
+            </div>
+            <div class="imgGaleria">
+                <img class="imgGal" src="media/gallery/img5.jpg" data-aos="fade-up" alt="">
+            </div>
+        </div>
+
+        <!-- Modal galeria -->
+
+        <div id="modalLightboxG">
+
+            <div id="imageToShow"></div>
+
+            <button class="lbButtons lbbRight" onclick="nextImgGal()">
+                <i class="fas fa-angle-right"></i>
+            </button>
+            <button class="lbButtons lbbLeft" onclick="previousImgGal()">
+                <i class="fas fa-angle-left"></i>
+            </button>
+
+        </div>
+
+
+    </section>
+    <!-- seccion galeria -->
+
+    <!-- seccion contacto -->
+    <section id="contacto">
+        <div class="sectionTitle">
+            <h2 class="title" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="750">Contacto</h2>
+        </div>
+
+        <div id="contactoContainer" data-aos="fade-down">
+            <div id="textoContacto">
+                <p>Vivamus non lobortis mauris.
+                    Aliquam erat volutpat. Integer est urna, sollicitudin ut urna non, convallis semper elit.
+                    Phasellus vulputate.</p>
+            </div>
+
+            <div id="formContacto">
+                <form action="" id="formulario">
+                    <input id="formNombre" type="text" name="name" placeholder="Nombre" required>
+                    <input id="formApellido" type="text" name="surname" placeholder="Apellido" required>
+                    <input type="number" name="phone" placeholder="Telefono">
+                    <input id="formMail" type="email" name="mail" placeholder="Mail" required>
+                    <textarea name="message" placeholder="Mensaje" required></textarea>
+                    <button id="botonEnviar" onclick="modalContacto()">enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Modal de formulario contacto -->
+
+        <div id="modalContacto">
+            <div id="modalBoxC">
+                <h1>¡Formulario enviado!</h1>
+                <p id="modalMensajeC">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, repellat!</p>
+                <button onclick="cerrarModalContacto()">Aceptar</button>
+            </div>
+        </div>
+
+    </section>
+    <!-- seccion contacto -->
+
+    <!-- footer -->
+    <footer id="footer">
+
+        <div id="copy">
+            <p>Copyright © 2023. All rights reserved</p>
+        </div>
+
+        <div id="rrss">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+    </footer>
+    <!-- Scripts y funciones -->
+    <script>
+        modalBienvenida();
+        readyLightbox();
+        // AOS library
+        AOS.init();
+    </script>
+
+    <!-- Actividad Complementaria UF2 -->
+    <script src="JS/complementaria.js"></script>
+</body>
+
+</html>
